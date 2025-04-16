@@ -1,0 +1,185 @@
+body { font-family: 'Rubik', sans-serif; background: linear-gradient(to right, #e0f7fa, #ffffff); color: black; transition: background-color 0.4s, color 0.4s; }
+
+.container { padding: 20px; animation: fadeIn 1.5s ease-in; }
+
+.profile-pic { width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 4px solid #4CAF50; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
+
+.name { font-family: 'Pacifico', cursive; font-size: 24px; }
+
+.about-me { background: linear-gradient(135deg, #e0f7fa, #fff3e0); padding: 20px; border-radius: 15px; margin-top: 20px; text-align: center; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); transition: 0.4s; animation: fadeSlideIn 1.5s ease-in-out; }
+
+.about-me h2 { color: #003366; font-size: 24px; }
+
+.about-me p { font-size: 16px; color: #333; margin: 10px 0; }
+
+.download-btn { display: inline-block; background-color: #003366; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; margin-top: 10px; transition: background-color 0.3s; }
+
+.download-btn:hover { background-color: #00509e; }
+
+.socials button { display: block; width: 200px; margin: 10px auto; padding: 10px; border: none; border-radius: 8px; color: white; font-size: 16px; transition: all 0.3s ease; }
+
+.whatsapp { background-color: #25D366; }
+
+.facebook { background-color: #3b5998; }
+
+.instagram { background-color: #E1306C; }
+
+.socials button:hover { transform: scale(1.05); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
+
+.text-animation { font-weight: bold; text-align: center; font-size: 20px; animation: blink 1s infinite; color: #000; background: #f0f0f0; padding: 10px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+
+.typewriter { overflow: hidden; border-right: 2px solid black; white-space: nowrap; margin: 0 auto; letter-spacing: 2px; animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite; text-align: center; }
+
+.quote-section { background-color: #f9fbe7; padding: 20px; margin-top: 30px; border-radius: 15px; animation: fadeSlideIn 2s ease-out; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); }
+#modeToggle { position: fixed; bottom: 15px; right: 15px; padding: 10px 15px; background-color: #222; color: white; border: none; border-radius: 5px; cursor: pointer; z-index: 999; }
+
+body.dark-mode { background: linear-gradient(to right, #0f0f0f, #1c1c1c); color: white; }
+
+body.quote-section {
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  padding: 30px 20px;
+  text-align: center;
+  margin: 30px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.quote-section h2 {
+  font-size: 26px;
+  color: #003366;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.quote-box {
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px dashed #00acc1;
+  box-shadow: 0 0 10px rgba(0, 172, 193, 0.4);
+}
+
+.quote-box p {
+  font-size: 18px;
+  color: #333;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Dark Mode */
+body.dark-mode .quote-section {
+  background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+}
+
+body.dark-mode .quote-box {
+  background-color: #222;
+  border-color: #00acc1;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+body.dark-mode .quote-box p {
+  color: #ccc;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+.dark-mode .about-me { background-color: whitesmoke: #fff; }
+body.dark-mode .download-btn { background-color: #444; }
+
+body.dark-mode .download-btn:hover { background-color: #666; }
+
+body.dark-mode #modeToggle { background-color: #ddd; color: black; }
+
+body.dark-mode .text-animation { color: #fff; background: #222; }
+
+body.dark-mode .quote-section { background-color: #2a2a2a; color: #fff; }
+
+.quote-box p {
+  font-size: 20px;
+  color: #003366;
+  font-style: italic;
+  margin: 0;
+  animation: glowText 3s ease-in-out infinite alternate, fadeInText 1s ease-in;
+}
+
+/* Light glow animation */
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 5px #00acc1, 0 0 10px #00acc1, 0 0 15px #00acc1;
+  }
+  to {
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+}
+
+/* Fade-in on load */
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}.contact-info {
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  transition: 0.4s;
+}
+
+.contact-info p {
+  margin: 15px 0;
+}
+
+.contact-info a {
+  color: #003366;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #007bff;
+}
+
+.contact-info i {
+  font-size: 18px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-info a:hover i {
+  transform: scale(1.2);
+  color: #00acc1;
+}
+
+body.dark-mode .contact-info {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .contact-info a {
+  color: #ffffff;
+}
+
+body.dark-mode .contact-info a:hover {
+  color: #00acc1;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="text-animation">🎉🥰WELCOME TO MY PERSONAL WEB!</div>
+  </header>
+
+  <section class="quote-section">
+  <h2>Words I Live By</h2>
+  <div class="quote-box">
+    <p>"Success doesn't come to you, you go to it."</p>
+  </div>
+</section>
+
+  <main class="container">
+    <img src="me.jpg" alt="Profile Picture" class="profile-pic" />
+    <p class="name">BASHIR GARBA HARUNA</p>
+    <p class="typing-text typewriter"></p>
+    <p>I,m learning how to code with AMEER YOLA</p>
+
+    <section class="skills">
+      <h2>My Skills</h2>
+      <div class="skill"><span>Tailoring</span><div class="progress-bar"><div class="progress" style="width: 100%"></div></div></div>
+      <div class="skill"><span>Cybersecurity</span><div class="progress-bar"><div class="progress" style="width: 35%"></div></div></div>
+      <div class="skill"><span>Web Development</span><div class="progress-bar"><div class="progress" style="width: 30%"></div></div></div>
+      <div class="skill"><span>Dex Trading</span><div class="progress-bar"><div class="progress" style="width: 80%"></div></div></div>
+    </section>
+
+    <section class="about-me glow-card">
+      <h2>About Me</h2>
+      <p>
+        I'm Bashir Garba Haruna, a passionate Cybersecurity student and beginner web developer. 
+        I also have skills in tailoring, airdrop hunting, dex trading, and building. 
+        I love learning new things and exploring technology.
+      </p>
+      <a href="path_to_your_cv.pdf" class="download-btn" download="Bashir_Garba_Haruna_CV">Download CV</a>
+    </section>
+
+    <div class="socials">
+      <a href="https://wa.me/+2349137813848" target="_blank"><button class="whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</button></a>
+      <a href="https://www.facebook.com/share/15zANWR3eG/" target="_blank"><button class="facebook"><i class="fab fa-facebook-f"></i> Facebook</button></a>
+      <a href="https://www.instagram.com/abubakarhmbashir?igsh=MTN2bXdwaW4yOTdzcA==" target="_blank"><button class="instagram"><i class="fab fa-instagram"></i> Instagram</button></a>
+    </div>
+   <section class="contact">
+  <h2>Contact Me</h2>
+  <p>Got a project or just want to say hi? Reach me below!</p>
+  <div class="contact-info">
+    <p>
+      <a href="mailto:abubakarharunabash6@gmail.com">
+        <i class="fas fa-envelope"></i>
+        <span>abubakarharunabash6@gmail.com</span>
+      </a>
+    </p>
+    <p>
+      <a href="tel:+2349137813848">
+        <i class="fas fa-phone"></i>
+        <span>+234 913 781 3848</span>
+      </a>
+    </p>
+    <p>
+      <a href="https://maps.google.com/?q=Chedi No. 49, Kano Municipal, Nigeria" target="_blank">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Chedi No. 49, Kano Municipal, Nigeria</span>
+      </a>
+    </p>
+  </div>
+</section>
+  </main>
+
+  <button id="modeToggle" aria-label="Toggle Dark Mode">Switch Mode</button>
+
+  <script>
+    // Toggle Dark Mode
+    const toggle = document.getElementById('modeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+
+    // Typewriter Effect
+    const roles = [
+      "Web Developer",
+      "Cybersecurity Enthusiast",
+      "Tailor",
+      "Dex Trader",
+      "Airdrop Hunter"
+    ];
+
+    let i = 0;
+    const typingText = document.querySelector(".typing-text");
+
+    function changeText() {
+      typingText.textContent = roles[i];
+      i = (i + 1) % roles.length;
+    }
+
+    setInterval(changeText, 4000);
+    changeText();
+  </script>
+</body>
+</html>
